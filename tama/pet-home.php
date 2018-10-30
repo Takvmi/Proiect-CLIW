@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style-voli.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
-
   <body id="pet-home-page">
     <header>
       <ul>
@@ -20,9 +19,27 @@
       </nav>
     </header>
     <main>
-      <!-- <img alt="Tama Bunny" src="assets/images/tama-bunny.png"> -->
-
+      <div id="main-content">
+        <img alt="Tama Bunny" src="assets/images/tama-bunny.png">
+        <h1>Tama Bunny</h1>
+        <h2>11</h2>
+      </div>
     </main>
-
+    <aside id="left-side">
+      <button>Feed</button>
+      <button>Educate</button>
+      <button>Entertain</button>
+    </aside>
+    <aside id="right-side">
+      <div class="stats-bar-container">
+        <div id="feed-stats-bar" class="stats-bar" style="width:25%">25%</div>
+      </div>
+      <div class="stats-bar-container">
+        <div id="educate-stats-bar" class="stats-bar" style="width:50%">50%</div>
+      </div>
+      <div class="stats-bar-container">
+        <div id="entertain-stats-bar" class="stats-bar" style="width:75%">75%</div>
+      </div>
+    </aside>
   </body>
 </html>

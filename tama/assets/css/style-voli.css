@@ -1,3 +1,6 @@
+#pet-home-page *:focus {
+  outline: none;
+}
 #pet-home-page header {
   overflow: hidden;
   background-color: #333;
@@ -29,8 +32,143 @@
 }
 #pet-home-page header button:hover,
 #pet-home-page header nav a:hover {
-    background-color: #111;
+  background-color: #111;
 }
 #pet-home-page header nav a {
   text-decoration: none;
+}
+#pet-home-page #left-side,
+#pet-home-page #right-side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#pet-home-page #left-side {
+  width: 150px;
+  left: 25px;
+}
+#pet-home-page #left-side button {
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  border-color: #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+#pet-home-page #left-side button:not(:last-child) {
+  margin-bottom: 16px;
+}
+#pet-home-page #left-side button:hover {
+  color: #fff;
+  background-color: #111;
+}
+#pet-home-page #right-side {
+  width: 250px;
+  right: 25px;
+}
+#pet-home-page #right-side .stats-bar-container {
+  padding: 2px;
+  border: 2px solid #333;
+  border-color: #333;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#pet-home-page #right-side .stats-bar-container:not(:last-child) {
+  margin-bottom: 16px;
+}
+#pet-home-page #right-side .stats-bar {
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  padding: 12px 14px;
+  background-color: #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#pet-home-page main {
+  height: calc(100vh - 47px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pet-home-page  #main-content {
+  text-align: center;
+}
+#pet-home-page  #main-content img {
+  width: 400px;
+  display: block;
+  margin-bottom: 10px
+}
+#pet-home-page  #main-content h1,
+#pet-home-page  #main-content h2 {
+  margin: 0;
+  color: #111;
+}
+#pet-home-page  #main-content h1 {
+  padding: 20px 0 10px;
+  border-top: 2px solid #111;
+}
+
+@media only screen and (max-width: 980px) {
+  #pet-home-page header {
+    text-align: center;
+  }
+  #pet-home-page header ul,
+  #pet-home-page header button,
+  #pet-home-page header nav {
+    float: none;
+  }
+  #pet-home-page header nav {
+    display: inline-block;
+  }
+  #pet-home-page main {
+    height: auto;
+    margin: 40px 0;
+  }
+  #pet-home-page #left-side,
+  #pet-home-page #right-side {
+    position: relative;
+    transform: none;
+    margin-bottom: 30px;
+  }
+  #pet-home-page #left-side {
+    left: 5%;
+    width: 35%;
+    float: left;
+  }
+  #pet-home-page #right-side {
+    right: 5%;
+    width: 50%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #pet-home-page header {
+    padding: 0;
+  }
+  #pet-home-page header ul li,
+  #pet-home-page header button,
+  #pet-home-page header nav a {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+  #pet-home-page  #main-content img {
+    width: 100%;
+    max-width: 400px;
+  }
+  #pet-home-page #left-side button {
+    font-size: 15px;
+    padding: 14px 6px;
+  }
+  #pet-home-page #right-side .stats-bar {
+    font-size: 15px;
+  }
 }
