@@ -1,9 +1,5 @@
 body {
   margin: 0;
-  background-image: url('../images/tama-banner.svg');
-  background-position:50% 0%;
-  background-size: 75%;
-  background-repeat: no-repeat;
   background-color: rgba(255,255,255,1);
   font-family: Verdana, Geneva, sans-serif;
 }
@@ -18,7 +14,7 @@ body {
     display: block;
     font-size: 20px;
 	}
-
+	
 	.cError{ font-size:1.4vh; color: rgba(255,50,50,1); }
 
     input[type=text], select,textarea {

@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
   </head>
 <body id="sign-in-page">
-
+  <img style="width: 40vw; position-top: 0%; height: auto;" alt="Tama Banner" src="assets/images/tama-banner.svg">
   <main>
     <img alt="Tama Bunny" src="assets/images/tama-bunny.svg">
 	<form>
