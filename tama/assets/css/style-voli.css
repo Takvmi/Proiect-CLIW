@@ -1,1 +1,36 @@
-
+#pet-home-page header {
+  overflow: hidden;
+  background-color: #333;
+  padding: 0 40px;
+}
+#pet-home-page header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+#pet-home-page header ul li,
+#pet-home-page header button,
+#pet-home-page header nav a {
+  display: inline-block;
+  color: #fff;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+#pet-home-page header button {
+  border: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+}
+#pet-home-page header button,
+#pet-home-page header nav {
+  float: right;
+}
+#pet-home-page header button:hover,
+#pet-home-page header nav a:hover {
+    background-color: #111;
+}
+#pet-home-page header nav a {
+  text-decoration: none;
+}
