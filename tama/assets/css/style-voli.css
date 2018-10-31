@@ -1,67 +1,67 @@
-#pet-home-page *:focus {
+*:focus {
   outline: none;
 }
-#pet-home-page header {
+header {
   overflow: hidden;
   background-color: #333;
   padding: 0 40px;
 }
-#pet-home-page header ul {
+header ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   float: left;
 }
-#pet-home-page header ul li,
-#pet-home-page header button,
-#pet-home-page header nav a {
+header ul li,
+header button,
+header nav a {
   display: inline-block;
   color: #fff;
   padding: 14px 16px;
   font-size: 16px;
 }
-#pet-home-page header button {
+header button {
   border: 0;
   font-family: Verdana, Geneva, sans-serif;
   background-color: transparent;
   cursor: pointer;
 }
-#pet-home-page header button,
-#pet-home-page header nav {
+header button,
+header nav {
   float: right;
 }
-#pet-home-page header button:hover,
-#pet-home-page header nav a:hover {
+header button:hover,
+header nav a:hover {
   background-color: #111;
 }
-#pet-home-page header nav a {
+header nav a {
   text-decoration: none;
 }
 
-#pet-home-page main {
+main {
   height: calc(100vh - 47px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#pet-home-page  #main-content {
+#main-content {
   text-align: center;
 }
-#pet-home-page  #pet-animation {
-  margin-bottom: 10px
-}
-#pet-home-page  #pet-animation img {
+#main-content img {
   width: 400px;
   display: block;
 }
-#pet-home-page  #pet-animation img:not(:last-child) {
+#pet-animation {
+  margin-bottom: 10px
+}
+#pet-animation img:not(:last-child) {
   position: absolute;
   animation: pet-animation 0.6s infinite ease-in-out;
 }
-#pet-home-page  #pet-animation img:nth-child(1) {
+#pet-animation img:nth-child(1) {
   animation-delay: -1.0s;
 }
-#pet-home-page  #pet-animation img:nth-child(2) {
+#pet-animation img:nth-child(2) {
   animation-delay: -1.1s;
 }
 @keyframes pet-animation{
@@ -72,27 +72,27 @@
    transform: translate(0%,1%);
   }
 }
-#pet-home-page  #main-content h1,
-#pet-home-page  #main-content h2 {
+#main-content h1,
+#main-content h2 {
   margin: 0;
   color: #111;
 }
-#pet-home-page  #main-content h1 {
+#main-content h1 {
   padding: 20px 0 10px;
   border-top: 2px solid #111;
 }
 
-#pet-home-page #left-side,
-#pet-home-page #right-side {
+#left-side,
+#right-side {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-#pet-home-page #left-side {
+#left-side {
   width: 150px;
   left: 25px;
 }
-#pet-home-page #left-side button {
+#left-side button {
   display: block;
   width: 100%;
   color: #333;
@@ -106,18 +106,18 @@
   border-radius: 4px;
   background-color: transparent;
 }
-#pet-home-page #left-side button:not(:last-child) {
+#left-side button:not(:last-child) {
   margin-bottom: 16px;
 }
-#pet-home-page #left-side button:hover {
+#left-side button:hover {
   color: #fff;
   background-color: #111;
 }
-#pet-home-page #right-side {
+#right-side {
   width: 250px;
   right: 25px;
 }
-#pet-home-page #right-side .stats-bar-container {
+#right-side .stats-bar-container {
   padding: 2px;
   border: 2px solid #333;
   border-color: #333;
@@ -125,10 +125,10 @@
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-#pet-home-page #right-side .stats-bar-container:not(:last-child) {
+#right-side .stats-bar-container:not(:last-child) {
   margin-bottom: 16px;
 }
-#pet-home-page #right-side .stats-bar {
+#right-side .stats-bar {
   color: #333;
   font-size: 20px;
   text-align: center;
@@ -139,58 +139,99 @@
   border-radius: 4px;
 }
 
+#pet-create-page header a {
+  text-decoration: none;
+}
+#pet-create-page header a:hover {
+  background-color: #111;
+}
+#pet-create-page header a,
+#pet-create-page header .available-points {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  padding: 14px 16px;
+  font-size: 16px;
+}
+#pet-create-page #main-content img {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #111;
+}
+#pet-create-page #main-content input {
+  margin-top: 20px;
+  text-align: center;
+  border: 0;
+  color: #111;
+  font-size: 2em;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  width: 400px;
+}
+#pet-create-page #left-side {
+  width: 250px;
+  max-height: 50%;
+  overflow-y: auto;
+}
+#pet-create-page #left-side::-webkit-scrollbar {
+  display: none;
+}
+#pet-create-page #left-side img {
+  width: 100%;
+  display: block;
+}
+
 @media only screen and (max-width: 980px) {
-  #pet-home-page header {
+  header {
     text-align: center;
   }
-  #pet-home-page header ul,
-  #pet-home-page header button,
-  #pet-home-page header nav {
+  header ul,
+  header button,
+  header nav {
     float: none;
   }
-  #pet-home-page header nav {
+  header nav {
     display: inline-block;
   }
-  #pet-home-page main {
+  main {
     height: auto;
     margin: 40px 0;
   }
-  #pet-home-page #left-side,
-  #pet-home-page #right-side {
+  #left-side,
+  #right-side {
     position: relative;
     transform: none;
     margin-bottom: 30px;
   }
-  #pet-home-page #left-side {
+  #left-side {
     left: 5%;
     width: 35%;
     float: left;
   }
-  #pet-home-page #right-side {
+  #right-side {
     right: 5%;
     width: 50%;
     float: right;
   }
 }
 @media only screen and (max-width: 480px) {
-  #pet-home-page header {
+  header {
     padding: 0;
   }
-  #pet-home-page header ul li,
-  #pet-home-page header button,
-  #pet-home-page header nav a {
+  header ul li,
+  header button,
+  header nav a {
     padding: 14px 10px;
     font-size: 14px;
   }
-  #pet-home-page  #main-content img {
+  #main-content img {
     width: 100%;
     max-width: 400px;
   }
-  #pet-home-page #left-side button {
+  #left-side button {
     font-size: 15px;
     padding: 14px 6px;
   }
-  #pet-home-page #right-side .stats-bar {
+  #right-side .stats-bar {
     font-size: 15px;
   }
 }
