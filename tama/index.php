@@ -1,6 +1,7 @@
 <?php
    session_start();
 ?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Tama</title>
@@ -9,7 +10,7 @@
     <meta charset="UTF-8">
   </head>
 <body id="sign-in-page">
-  <img style="width: 40vw; position-top: 0%; height: auto;" alt="Tama Banner" src="assets/images/tama-banner.svg">
+  <img style="width: 40vw; height: auto;" alt="Tama Banner" src="assets/images/tama-banner.svg">
   <main>
     <img alt="Tama Bunny" src="assets/images/tama-bunny.svg">
 	<form>
@@ -22,7 +23,6 @@
 		 <div id="passErrorDiv"><br><br></div>
 		 <div id="extraErrorDiv"></div>
     </form>
-	<div style="align: center;">
 	<div class="cButton" style="width:220px; padding: 40px; padding-top: 0px; ">
 	<button style="width:220px; position:relative;" onclick="errorJS()">Sign In</button>
 	<button style="width:220px; position:relative;" onclick="signUPJS()">Sign Up</button>
