@@ -14,7 +14,7 @@
     </header>
     <main>
       <div id="main-content">
-        <img alt="Tama Bunny" src="assets/images/tama-bunny.svg">
+        <img alt="Tama Bunny" src="assets/images/tama-bunny-body.svg">
         <input type="text" id="pet-name" name="pet-name" placeholder="Enter Pet Name">
       </div>
     </main>
