@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
   </head>
 <body id="sign-in-page">
-  <img style="width: 40vw; height: auto;" alt="Tama Banner" src="assets/images/tama-banner.svg">
+  <img style=" width: 50%; height: auto;" alt="Tama Banner" src="assets/images/tama-banner.svg">
   <main>
     <img alt="Tama Bunny" src="assets/images/tama-bunny.svg">
 	<form>
@@ -23,11 +23,11 @@
 		 <div id="passErrorDiv"><br><br></div>
 		 <div id="extraErrorDiv"></div>
     </form>
-	<div class="cButton" style="width:220px; padding: 40px; padding-top: 0px; ">
-	<button style="width:220px; position:relative;" onclick="errorJS()">Sign In</button>
-	<button style="width:220px; position:relative;" onclick="signUPJS()">Sign Up</button>
-	</div>
   </main>
+  <div id="box" style="width:220px;">
+	<button class="cButton" style="width:180px; height: 70px;" onclick="errorJS()">Sign In</button>
+	<button class="cButton" style="width:180px; height: 70px;" onclick="signUPJS()">Sign Up</button>
+	</div>
 
 </body>
 </html>
