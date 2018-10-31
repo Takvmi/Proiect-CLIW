@@ -249,7 +249,7 @@ main {
     text-align: center;
   }
   header ul,
-  header button,
+  #pet-home-page header button,
   header nav {
     float: none;
   }
@@ -266,15 +266,49 @@ main {
     transform: none;
     margin-bottom: 30px;
   }
-  #left-side {
+  #pet-home-page #left-side {
     left: 5%;
     width: 35%;
     float: left;
   }
-  #right-side {
+  #pet-home-page #right-side {
     right: 5%;
     width: 50%;
     float: right;
+  }
+  #pet-create-page #left-side {
+    left: 0;
+    width: 60%;
+    margin: 0 auto 30px;
+  }
+  #pet-create-page #body-parts-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #pet-create-page #right-side {
+    right: 0;
+    width: 90%;
+    margin: 0 auto 30px;
+  }
+  #pet-create-page #right-side table,
+  #pet-create-page #right-side button {
+    width: 60%;
+  }
+  #pet-create-page #right-side table {
+    margin: 0 auto 30px;
+  }
+  #pet-create-page #right-side button {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #pet-create-page #body-parts-container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 580px) {
+  header ul li:first-child {
+    display: block;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -283,11 +317,14 @@ main {
   }
   header ul li,
   header button,
-  header nav a {
+  header nav a,
+  #pet-create-page header a,
+  #pet-create-page header .available-points {
     padding: 14px 10px;
     font-size: 14px;
   }
-  #main-content img {
+  #main-content img,
+  #pet-create-page #main-content input {
     width: 100%;
     max-width: 400px;
   }
@@ -297,5 +334,12 @@ main {
   }
   #right-side .stats-bar {
     font-size: 15px;
+  }
+  #pet-create-page #left-side {
+    width: 90%;
+  }
+  #pet-create-page #right-side table,
+  #pet-create-page #right-side button {
+    width: 100%;
   }
 }

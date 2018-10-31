@@ -9,6 +9,7 @@
   <body id="pet-home-page">
     <header>
       <ul>
+        <li>Username: Steve</li>
         <li>Level: 13</li>
         <li>Points: 42</li>
       </ul>
