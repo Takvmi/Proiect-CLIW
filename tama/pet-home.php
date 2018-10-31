@@ -20,7 +20,11 @@
     </header>
     <main>
       <div id="main-content">
-        <img alt="Tama Bunny" src="assets/images/tama-bunny.png">
+        <div id="pet-animation">
+          <img alt="Tama Bunny" src="assets/images/tama-bunny-head.svg">
+          <img alt="Tama Bunny" src="assets/images/tama-bunny-arms.svg">
+          <img alt="Tama Bunny" src="assets/images/tama-bunny-body.svg">
+        </div>
         <h1>Tama Bunny</h1>
         <h2>11</h2>
       </div>
