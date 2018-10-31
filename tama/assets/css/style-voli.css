@@ -92,7 +92,8 @@ main {
   width: 150px;
   left: 25px;
 }
-#left-side button {
+#left-side button,
+#pet-create-page #right-side button {
   display: block;
   width: 100%;
   color: #333;
@@ -109,7 +110,8 @@ main {
 #left-side button:not(:last-child) {
   margin-bottom: 16px;
 }
-#left-side button:hover {
+#left-side button:hover,
+#pet-create-page #right-side button:hover {
   color: #fff;
   background-color: #111;
 }
@@ -138,7 +140,6 @@ main {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-
 #pet-create-page header a {
   text-decoration: none;
 }
@@ -169,15 +170,78 @@ main {
 }
 #pet-create-page #left-side {
   width: 250px;
-  max-height: 50%;
-  overflow-y: auto;
 }
-#pet-create-page #left-side::-webkit-scrollbar {
+#pet-create-page #select-buttons {
+  margin-bottom: 15px;
+}
+#pet-create-page #select-buttons button {
+  float: left;
+  width: 30%;
+}
+#pet-create-page #select-buttons button:not(:last-child) {
+  margin-right: 5%;
+  margin-bottom: 0;
+}
+#pet-create-page #select-buttons::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#pet-create-page #body-parts-container {
+  height: 60vh;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#pet-create-page #body-parts-container::-webkit-scrollbar {
   display: none;
 }
-#pet-create-page #left-side img {
+#pet-create-page #body-parts-container .body-part {
+  border: 1px solid #999;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  position: relative;
+}
+#pet-create-page #body-parts-container img {
   width: 100%;
   display: block;
+}
+#pet-create-page #body-parts-container span {
+  font-size: 32px;
+  position: absolute;
+  bottom: 2px;
+  right: 6px;
+}
+#pet-create-page #right-side {
+  width: auto;
+}
+#pet-create-page #right-side table {
+  background-color: #111;
+  border-collapse: collapse;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+#pet-create-page #right-side table tbody th {
+  color: #fff;
+}
+#pet-create-page #right-side table tbody th,
+#pet-create-page #right-side table tfoot th {
+  padding: 16px 14px;
+  font-size: 20px;
+}
+#pet-create-page #right-side table tfoot {
+  background-color: #999;
+}
+#pet-create-page #right-side table tfoot th {
+  color: #111;
 }
 
 @media only screen and (max-width: 980px) {
