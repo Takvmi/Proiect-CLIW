@@ -12,12 +12,12 @@
 	$con = mysqli_connect('127.0.0.1','root','','tama');
 	if(!$con)
 	{
-		header("refresh:5; url=siteHTML_Home.php");
+		header("refresh:5; url=siteHTML_Home.html");
 		exit("Connection to server failed");
 	}
 	if(!mysqli_select_db($con,'tama'))
 	{
-		header("refresh:5; url=siteHTML_Home.php");
+		header("refresh:5; url=siteHTML_Home.html");
 		exit("Database not selected");
 	}
 	

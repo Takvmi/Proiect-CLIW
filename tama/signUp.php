@@ -3,12 +3,12 @@
 	$con = mysqli_connect('127.0.0.1','root','','tama');
 	if(!$con)
 	{
-		header("refresh:5; url=siteHTML_Home.html");
+		header("refresh:5; url=index.html");
 		exit("Connection to server failed");
 	}
 	if(!mysqli_select_db($con,'tama'))
 	{
-		header("refresh:5; url=siteHTML_Home.html");
+		header("refresh:5; url=index.html");
 		exit("Database not selected");
 	}
 	
@@ -23,7 +23,7 @@
 	
 	if(!$Name)
 	{
-		header("Location: siteHTML_Signup.php?name=error1");
+		header("Location: sign-up.html?name=error1");
 		exit();
 	}
 	else if($Name)
@@ -31,7 +31,7 @@
 		
 		if(strpos($Name, ' ') !== false)
 		{
-			header("Location: siteHTML_Signup.php?name=error3");
+			header("Location: sign-up.html?name=error3");
 			exit();
 		}
 		
@@ -40,7 +40,7 @@
 		$temp = str_replace("\\" , "xx"  , $temp);
 		if(strlen($temp) != strlen($Name))
 		{
-			header("Location: siteHTML_Signup.php?name=error5");
+			header("Location: sign-up.html?name=error5");
 			exit();
 		}
 		
@@ -50,13 +50,13 @@
 		$result = $con->query($sql);
 		if ($result->num_rows > 0) 
 		{
-			header("Location: siteHTML_Signup.php?name=error2");
+			header("Location: sign-up.html?name=error2");
 			exit();
 		}
 		
 		if(strlen($Name)>19)
 		{
-			header("Location: siteHTML_Page1.php?name=error4");
+			header("Location: sign-up.html?name=error4");
 			exit();
 		}
 		
@@ -72,7 +72,7 @@
 	}
 	if (!$Email)
 	{
-		header("Location: siteHTML_Signup.php?email=error1");
+		header("Location: sign-up.html?email=error1");
 		exit();
 	}
 	else if($Email)
@@ -82,7 +82,7 @@
 		$temp = str_replace("\\" , "xx"  , $temp);
 		if(strlen($temp) != strlen($Email))
 		{
-			header("Location: siteHTML_Signup.php?email=error3");
+			header("Location: sign-up.html?email=error3");
 			exit();
 		}
 		
@@ -92,12 +92,12 @@
 		$result = $con->query($sql);
 		if ($result->num_rows > 0) 
 		{
-			header("Location: siteHTML_Signup.php?email=error2");
+			header("Location: sign-up.html?email=error2");
 			exit();
 		}
 		if(!filter_var($Email, FILTER_VALIDATE_EMAIL))
 		{
-            header("Location: siteHTML_Signup.php?email=error3");
+            header("Location: sign-up.html?email=error3");
 			exit();
         }
 		
@@ -113,14 +113,14 @@
 	}
 	if(!$Pass)
 	{
-		header("Location: siteHTML_Signup.php?pass=error1");
+		header("Location: sign-up.html?pass=error1");
 		exit();
 	}
 	else if($Pass)
 	{		
 		if($Pass == trim($Pass) && strpos($Pass, ' ') !== false)
 		{
-			header("Location: siteHTML_Signup.php?pass=error3");
+			header("Location: sign-up.html?pass=error3");
 			exit();
 		}
 		$temp = $Pass;
@@ -128,13 +128,13 @@
 		$temp = str_replace("\\" , "xx"  , $temp);
 		if(strlen($temp) != strlen($Pass))
 		{
-			header("Location: siteHTML_Signup.php?pass=error4");
+			header("Location: sign-up.html?pass=error4");
 			exit();
 		}
 		
 		if(strlen($Pass)<6)
 		{
-			header("Location: siteHTML_Signup.php?pass=error2");
+			header("Location: sign-up.html?pass=error2");
 			exit();
 		}
 	}
@@ -149,14 +149,14 @@
 	}
 	if(!$RePass)
 	{
-		header("Location: siteHTML_Signup.php?rep=error1");
+		header("Location: sign-up.html?rep=error1");
 		exit();
 	}
 	else if($RePass)
 	{		
 		if(strcmp($Pass,$RePass))
 		{
-			header("Location: siteHTML_Signup.php?rep=error2");
+			header("Location: sign-up.html?rep=error2");
 			exit();
 		}
 	}

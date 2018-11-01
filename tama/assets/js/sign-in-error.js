@@ -41,7 +41,7 @@ function errorJS(){
 			}
 			else if (error == 0 && success == 1)
 			{
-				window.location.replace("http://localhost/Project_TAMA/pet-home.php");
+				window.location.replace("http://localhost/Project_TAMA/pet-home.html");
 			}
 				
 			}
@@ -50,5 +50,5 @@ function errorJS(){
 };
 
 function signUPJS(){
-	window.location.replace("http://localhost/Project_TAMA/sign-up.php");
+	window.location.replace("http://localhost/Project_TAMA/sign-up.html");
 };
