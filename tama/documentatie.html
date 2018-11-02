@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tama - Documentatie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/documentatie.css" />
+ </head>
+ <body prefix="schema: http://schema.org/">
+    <header>
+        <h1 property="schema:name">Tamagotchi (<span role="doc-subtitle" property="schema:alternateName">Tama</span>)</h1>
+    </header>
+    <div role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd>Teodor Tanase, Valentin Palade, Gabriel-Teofil Mititelu</dd>
+        </dl>
+    </div>
+    <section typeof="sa:Categorii">
+        <h2>Cuprins</h2>
+        <ol role="directory">
+            <li><a href="#descriere">Descrierea proiectului</a></li>
+            <li><a href="#idei-design">Idei/Concepte importante privind design-ul general</a></li>
+            <li><a href="#interactiune">Maniera de interactiune cu utilizatorul</a></li>
+            <li><a href="#versionare">Managementul codului-sursa</a></li>
+            <li><a href="#echipa">Membrii echipei</a></li>
+        </ol>
+    </section>
+    <section typeof="sa:Results" id="descriere">
+        <h2>1. Descrierea proiectului</h2>
+        <blockquote>
+            <p>
+                Să se creeze un mini-framework MV* pentru dezvoltarea de aplicaţii Web animate vectoriale la nivel de client. Ca studiu de caz efectiv, acesta va fi utilizat pentru a implementa un simulator al jocului Tamagotchi. Minimal, fiecare utilizator autentificat va gestiona unul sau mai multe personaje pe care le va îngriji (hrăni, educa, amuza). Aplicaţia Web va oferi un mod interactiv de a crea şi configura aceste personaje, plus partajarea acestora în utilizatori. Bonus: implementarea unui sistem de dirijare a mesajelor la nivel de client pentru a putea construi aplicaţii de tip SPA – Single Page Application.
+            </p>
+        </blockquote>
+    </section>
+    <section id="idei-design">
+        <h2>2. Idei/Concepte importante privind design-ul general</h2>
+        <ul>
+            <li style="font-size:large;">Pagina de sign-up/inregistrare.</li>
+            <li style="font-size:large;">Pagina de login.</li>
+            <li style="font-size:large;">Pagina principala(home).</li>
+            <li style="font-size:large;">Pagina pentru crearea personajului/animalului de companie.</li>
+            <li style="font-size:large;">Pagina pentru selectarea animalutului.</li>
+        </ul>
+    </section>
+    <section id="interactiune">
+        <h2>3. Maniera de interactiune cu utilizatorul</h2>
+        <blockquote>
+            <p style="font-size:large;">Utilizatorii vor interactiona cu aplicatia web prin intermediul oricarui Browser Web avand 
+                in prealabil conexiune la internet.
+            </p>
+        </blockquote>
+    </section>
+    <section id="versionare">
+        <h2>4. Managementul codului-sursa</h2>
+        <blockquote>
+            <p>
+                Am folosit GitHub pentru management-ul codului-sursa  intrucat eram deja familiarizati cu el, codul fiind disponibil la adresa
+                <a href="https://github.com/Takvmi/Proiect-CLIW">Tama - Github</a>
+                .
+            </p>
+        </blockquote>
+    </section>
+    <section typeof="sa:AuthorsList" id="echipa">
+        <h2>5. Membrii echipei</h2>
+        <ul>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:givenName">
+                    Teodor
+                </span>
+                <span property="schema:familyName">
+                    Tanase
+                </span>
+                
+            </li>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:givenName">
+                    Valentin 
+                </span>
+                <span property="schema:familyName">
+                    Palade
+                </span>
+            
+            </li>
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span property="schema:givenName">
+                    Gabriel - Teofil
+                </span>
+                <span property="schema:familyName">
+                    Mititelu
+                </span>
+                
+            </li>
+        </ul>
+    </section>
+ </body>
+</html> 
