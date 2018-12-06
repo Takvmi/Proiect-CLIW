@@ -454,31 +454,20 @@ that burden on the javascript framework.
                 </p>
 
             </section>
-            <section typeof="sa:ComponentsDetails" id="componentsdetails">
-                <h2>Components details:</h3>
-                <p>Events:</p>
+            <section typeof="sa:architecture" id="architecture">
+                <h2>Architecture</h2>
                 <ul>
-                  <li>onLogin - connecting with the account stored in the database</li>
-                  <li>onLogout - disconnecting from the application</li>
-                  <li>offlineMode - connects to a special offline account // not a priority</li>
-                  <li>homeActive - displaying the home page of the application</li>
-                  <li>createActive - displaying the character creation page</li>
-                  <li>selectActive - displaying the character selection page</li>
-                  <li>petRender - displays the animated pet along with its level</li>
-                  <li>petActive - remembers the current active pet</li>
-                  <li>feedHandle - handles the actions and checking of the feed bar</li>
-                  <li>feedRender - displays the feed status  // do the same for the other handlers</li>
-                  <li>eduHandle - handles the actions, rendering and checking of the education bar</li>
-                  <li>entHandle - handles the actions, rendering and checking of the entertain bar</li>
-                  <li>topBarHandle - handles the actions and rendering of the top bar</li>
-                  <li>buildRender - displays the pet as it is being built and the name field</li>
-                  <li>petStats - displays the pet stats</li>
-                  <li>petCreate - confirms the creation of a new pet</li>
-                  <li>petDeath - handles the event of the pet dying</li>
-                  <li>compList - handles the displaying and selection of different components</li>
-                  <li>petSelect - handles the selection of a pet</li>
-                  <li>petTransfer - handles the transfering of a pet to another user</li>
+                  <li>the login and sign up pages have separate .php files</li>
+              	  <li>all the other pages share one .js file (the framework) with multiple functions</li>
+              	  <li>all the pages have their own .css files along with one master .css file</li>
                 </ul>
+                <h3>Use Case Diagram</h3>
+                <figure typeof="sa:Image">
+                    <img alt="Use Case Diagram" src="architecture-diagrams/use-case.png" width="880" height="655">
+                </figure>
+                <p>The server will serve the javascript which in turn will display the HTML code
+	according to the current state and the client data. The client side will be
+	separated on login, home, create and select pages. </p>
             </section>
             <section typeof="sa:Components" id="components">
                 <h2>Components:</h3>
@@ -525,22 +514,53 @@ that burden on the javascript framework.
                   </li>
                 </ul>
             </section>
-            <section typeof="sa:PageArchitecture" id="pagearchitecture">
-                <h2>Page Architecture</h2>
+            <section typeof="sa:EventsDetails" id="eventsdetails">
+                <h2>Events details:</h3>
                 <ul>
-                  <li>the login and sign up pages have separate .php files</li>
-              	  <li>all the other pages share one .js file (the framework) with multiple functions</li>
-              	  <li>all the pages have their own .css files along with one master .css file</li>
+                  <li>onLogin - connecting with the account stored in the database</li>
+                  <li>onLogout - disconnecting from the application</li>
+                  <li>offlineMode - connects to a special offline account // not a priority</li>
+                  <li>homeActive - displaying the home page of the application</li>
+                  <li>createActive - displaying the character creation page</li>
+                  <li>selectActive - displaying the character selection page</li>
+                  <li>petRender - displays the animated pet along with its level</li>
+                  <li>petActive - remembers the current active pet</li>
+                  <li>feedHandle - handles the actions and checking of the feed bar</li>
+                  <li>feedRender - displays the feed status  // do the same for the other handlers</li>
+                  <li>eduHandle - handles the actions, rendering and checking of the education bar</li>
+                  <li>entHandle - handles the actions, rendering and checking of the entertain bar</li>
+                  <li>topBarHandle - handles the actions and rendering of the top bar</li>
+                  <li>buildRender - displays the pet as it is being built and the name field</li>
+                  <li>petStats - displays the pet stats</li>
+                  <li>petCreate - confirms the creation of a new pet</li>
+                  <li>petDeath - handles the event of the pet dying</li>
+                  <li>compList - handles the displaying and selection of different components</li>
+                  <li>petSelect - handles the selection of a pet</li>
+                  <li>petTransfer - handles the transfering of a pet to another user</li>
                 </ul>
-                <p>The server will serve the javascript which in turn will display the HTML code
-	according to the current state and the client data. The client side will be
-	separated on login, home, create and select pages. </p>
             </section>
             <section typeof="sa:Acknowledgements" id="acknowledgements">
                 <h2>Acknowledgements</h2>
                 <p>
                     <a href="http://scholarlyhtml.org/">Scholarly HTML</a>
                 </p>
+                <p>
+                    <a href="https://github.com/">GitHub</a>
+                </p>
+                <p>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Faddyosmani.com%2Fresources%2Fessentialjsdesignpatterns%2Fbook%2F%3Ffbclid%3DIwAR0j6z11DjC5FHhp999MtfN1aeqc91PETL9IIYV4Aliu_y5mNAZiPfd3L7w&h=AT2LcBOnfwEz_JylOLF0a4vROootAvpNTcpAuok73jQuq956CyYNWaX6b9qLaJe4P9et_Me-4ZRTaKDN0l2faRCxK_6T3ir5dKOCKoKudfyptVetGrIBPuo0o5tl-pAuE6MBDA">Learning JavaScript Design Patterns</a>
+                </p>
+                <p>
+                    <a href="https://www.w3schools.com/">w3schools</a>
+                </p>
+                <p>
+                    <a href="https://profs.info.uaic.ro/~busaco/teach/courses/cliw/">Dezvoltarea aplicaţiilor Web
+la nivel de client</a>
+                </p>
+                <p>
+                    <a href="http://slides.com/iampava/cliw-2018#/">CLIW | Laboratories 2018</a>
+                </p>
+                <p>And many more</p>
             </section>
         </article>
     </body>
