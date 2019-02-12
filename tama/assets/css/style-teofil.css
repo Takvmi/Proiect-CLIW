@@ -1,3 +1,46 @@
-#pet-create-page #main-content img {
+header {
+  overflow: hidden;
+  background-color: #333;
+  padding: 0 40px;
+}
+
+header button,
+header nav {
+  float: right;
+}
+header button:hover,
+header nav a:hover {
+  background-color: #111;
+}
+header nav a {
+  text-decoration: none;
+}
+
+main {
+  height: calc(100vh - 47px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#pet-select-page header a {
+  text-decoration: none;
+}
+#pet-select-page header a:hover {
+  background-color: #111;
+}
+
+#pet-select-page #main-content img {
   border-bottom: none;
 }
+  #pet-create-page header .available-points {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+  .container-element {
+    max-height: 350px;
+    display: inline-block;
+  }
+  .container-element p {
+    font-size: 20px;
+    align-self: center;
+  }  
